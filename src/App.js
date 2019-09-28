@@ -8,7 +8,7 @@ class App extends Component{
     this.pageTitle = "Home";
     this.state = {
       todos : [],
-      title : "React Simple Application",
+      title : "React Simple Application TS",
       counter : 1,
       currenttime :  new Date()
     }
