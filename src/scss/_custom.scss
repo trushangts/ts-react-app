@@ -1,0 +1,36 @@
+@font-face {
+   font-family: 'helveticaneue';
+   src: url('./font/helveticaneue.woff2') format('woff2'),
+       url('./font/helveticaneue.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+
+.login-bg{ background: url('../img/15.jpg') no-repeat center center;float: left;width: 100%;overflow: hidden; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+ .login-bg .col-md-8{max-width: 45.66667%;margin-left:950px;}
+ .login-bg .card{background-color:rgba(255, 255, 255, 0.5);}
+ .login-bg .btn-primary{background-color: rgb(91, 49, 133); border-color: rgb(91, 49, 133);}
+ .login-bg .btn-primary:hover{background-color: rgb(91, 49, 133); border-color: rgb(91, 49, 133);}
+ .login-bg .btn-primary:focus{background-color: rgb(91, 49, 133); border-color: rgb(91, 49, 133);}
+ .login-bg .btn-primary:active{background-color: rgb(91, 49, 133) !important; border-color: rgb(91, 49, 133) !important; box-shadow:none !important;}
+ .login-bg .btn-link{color: rgb(91, 49, 133) !important;}
+
+.login-form{float: right;}
+
+@media only screen and (max-width: 499px){
+.card-group{width: 100%;}
+.login-form{float: none;}
+.login-form .p-4{padding: 0.5rem !important}
+.login-form .btn {font-size: 0.863em;}
+.forgot-btn{float: right;margin-right: 0;}
+}
+
+
+@media only screen and (max-width: 1139px){
+.login-bg .col-md-8{margin-left: 60%;}
+}
