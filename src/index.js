@@ -1,16 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import Home from './Home';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 
-import * as serviceWorker from './serviceWorker';
+/*STYLES*/
+import 'flag-icon-css/css/flag-icon.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+import 'simple-line-icons/css/simple-line-icons.css';
+import './scss/style.scss'
+//import '../scss/core/_dropdown-menu-right.scss'
+// import '../public/img/developer.css'
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+// Containers
+import Full from './template/Full'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// Views
+
+
+ReactDOM.render((
+  <HashRouter>
+    <Switch>
+      <Route path="/" name="Home" component={Full}/>
+    </Switch>
+  </HashRouter>
+), document.getElementById('root'));
