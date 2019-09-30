@@ -19,5 +19,6 @@ const routes = {
     '/viewloginlogs': 'View Loginlogs',
     '/setting': 'Settings',
     '/viewadministrator': 'View Administrators',
+    '/about':'About US'
 };
 export default routes;

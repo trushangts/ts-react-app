@@ -6,6 +6,7 @@ import {
           NavItem,
           NavLink,
 } from 'reactstrap';
+import HeaderDropdown from './HeaderDropdown';
 
 export default class Header extends React.Component {
   render () {
@@ -20,12 +21,12 @@ export default class Header extends React.Component {
               <span className="navbar-toggler-icon"></span>
           </NavbarToggler>
 
-          {/* <Nav className="ml-auto" navbar>
+          <Nav className="ml-auto" navbar>
               <HeaderDropdown notif/>
               <HeaderDropdown tasks/>
               <HeaderDropdown mssgs/>
               <HeaderDropdown accnt/>
-          </Nav> */}
+          </Nav>
         </header>
     )}
 }

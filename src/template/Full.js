@@ -5,11 +5,11 @@ import Header from '../components/Html/Header';
 import Footer from '../components/Html/Footer';
 import Sidebar from '../components/Sidebar/';
 import Breadcrumb from '../components/Breadcrumb/';
-// import Breadcrumb from '../../components/Breadcrumb/';
-// import Aside from '../../components/Aside/';
+//import Aside from '../components/Aside/';
 
 
 import Dashboard from '../views/Dashboard/Dashboard';
+import About from '../views/About/About';
 // import ViewAdministrator from '../../views/Administrator/ViewAdministrator';
 // import AddAdministrator from '../../views/Administrator/AddAdministrator';
 // import EditAdministrator from '../../views/Administrator/EditAdministrator';
@@ -28,10 +28,12 @@ class Full extends Component {
 						<Container fluid>
 							<Switch>
 								<Route path="/dashboard" name="Category" component={Dashboard} />
+								<Route path="/about" name="Category" component={About} />
+								<Redirect from="/" to="/login" />
 								{/* <Route path="/viewadministrator" name="Administrator" component={ViewAdministrator} />
 								<Route path="/addadministrator" name="Administrator" component={AddAdministrator} />
 								<Route path="/editadministrator" name="Administrator" component={EditAdministrator} />
-								<Redirect from="/" to="/login" /> */}
+								*/}
 							</Switch>
 						</Container>
 					</main>

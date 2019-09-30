@@ -11,6 +11,7 @@ import './scss/style.scss'
 // import '../public/img/developer.css'
 
 // Containers
+import Login from './views/Login/'
 import Full from './template/Full'
 
 // Views
@@ -19,7 +20,9 @@ import Full from './template/Full'
 ReactDOM.render((
   <HashRouter>
     <Switch>
-      <Route path="/" name="Home" component={Full}/>
+      {/* <Route path="/" name="Home" component={Full}/> */}
+      <Route path="/" name="Home" component={Login}/>
+      
     </Switch>
   </HashRouter>
 ), document.getElementById('root'));
